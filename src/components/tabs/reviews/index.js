@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import './index.css';
+import ReviewList from './reviewList';
 
 class Reviews extends Component {
   render() {
     return (
       <div className="Reviews">
-        <h1>Reviews Tab</h1>
+        <ReviewList reviews={this.props.reviews} />
       </div>
     );
   }
