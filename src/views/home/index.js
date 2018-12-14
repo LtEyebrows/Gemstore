@@ -8,7 +8,7 @@ class Home extends Component {
   render() {
     return (
       <div className="container">
-        <ProductList products={this.props.products} />
+        <ProductList products={this.props.products}  addItem={this.props.addItem} />
       </div>
     );
   }
